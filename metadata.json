@@ -1,5 +1,5 @@
 {
-  "name": "React Bricks 3D",
+  "name": "LEGO",
   "description": "A fully functional 3D Lego-style builder built with React Three Fiber. Features include a shape palette, color selection, rotation, collision detection, and interactive brick modification.",
   "requestFramePermissions": []
 }
