@@ -419,7 +419,7 @@ const App: React.FC = () => {
         <div className="flex justify-between items-start pointer-events-auto">
           <div className="bg-gray-800/80 backdrop-blur-md p-4 rounded-xl border border-gray-700 shadow-xl">
             <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              React Bricks 3D
+              LEGO
             </h1>
             <div className="text-xs text-gray-400 mt-1 flex flex-col gap-1">
               <span className="flex items-center gap-1"><MousePointer2 size={12}/> Click empty space to Build</span>
