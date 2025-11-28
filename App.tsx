@@ -10,6 +10,14 @@ import {
   RotateCw, Trash2, MousePointer2, Move, Save, Download, Magnet, 
   Undo2, Redo2, Image as ImageIcon, Ban, FolderOpen, Upload, X, FileJson
 } from 'lucide-react';
+const generateUUID = (): string => {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    const r = Math.random() * 16 | 0;
+    const v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+};
+
 
 const App: React.FC = () => {
   // History State
@@ -143,7 +151,7 @@ const App: React.FC = () => {
     if (!newSaveName.trim()) return;
     
     const newScene: SavedScene = {
-      id: crypto.randomUUID(),
+      id: generateUUID(),
       name: newSaveName,
       date: Date.now(),
       data: bricks
